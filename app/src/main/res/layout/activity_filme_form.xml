@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilmeForm">
+
+    <TextView
+        android:id="@+id/text_Filme_Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:text="Filme"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_Filme_Form_Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Título"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Filme_Form" />
+
+    <Spinner
+        android:id="@+id/spinner_Filme_Form_Categorias"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Categorias"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Filme_Form_Titulo" />
+
+    <EditText
+        android:id="@+id/edt_Filme_Form_Ano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="Ano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Filme_Form_Categorias" />
+
+    <EditText
+        android:id="@+id/edt_Filme_Form_Avaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="Avaliação (0 - 100)"
+        app:layout_constraintStart_toStartOf="@+id/edt_Filme_Form_Ano"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Filme_Form_Ano" />
+
+    <EditText
+        android:id="@+id/edt_Filme_Form_Tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="Tempo em Minutos"
+        app:layout_constraintStart_toStartOf="@+id/edt_Filme_Form_Avaliacao"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Filme_Form_Avaliacao" />
+
+    <Button
+        android:id="@+id/btn__Filme_Form_Salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="74dp"
+        android:text="Salvar"
+        android:onClick="salvarFilme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn__Filme_Form_Excluir"
+        app:layout_constraintEnd_toEndOf="@+id/btn__Filme_Form_Voltar" />
+
+    <Button
+        android:id="@+id/btn__Filme_Form_Excluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="28dp"
+        android:text="Excluir"
+        android:onClick="excluirFilme"
+        app:layout_constraintBottom_toTopOf="@+id/btn__Filme_Form_Voltar"
+        app:layout_constraintStart_toStartOf="@+id/btn__Filme_Form_Voltar" />
+
+    <Button
+        android:id="@+id/btn__Filme_Form_Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="Voltar"
+        android:onClick="voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

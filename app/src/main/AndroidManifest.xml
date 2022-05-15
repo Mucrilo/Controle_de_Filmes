@@ -14,6 +14,18 @@
         android:theme="@style/Theme.ControleDeFilmes"
         tools:targetApi="31">
         <activity
+            android:name=".CategoriaForm"
+            android:exported="false" />
+        <activity
+            android:name=".FilmeForm"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriaView"
+            android:exported="false" />
+        <activity
+            android:name=".FilmeView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
