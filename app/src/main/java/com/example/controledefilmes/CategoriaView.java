@@ -28,7 +28,7 @@ public class CategoriaView extends AppCompatActivity {
     @Override
     protected void onResume(){
         super.onResume();
-        intent = new Intent(this, CategoriaView.class);
+        intent = new Intent(this, CategoriaForm.class);
         preencheCategorias();
     }
 
