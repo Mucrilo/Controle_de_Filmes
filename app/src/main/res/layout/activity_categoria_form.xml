@@ -39,7 +39,7 @@
         android:layout_marginBottom="37dp"
         android:text="Salvar"
         android:onClick="salvarCategoria"
-        app:layout_constraintBottom_toTopOf="@+id/btn__Categoria_Form_Voltar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Categoria_Form_Voltar"
         app:layout_constraintEnd_toStartOf="@+id/btn_Categoria_Form_Excluir"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
@@ -55,7 +55,7 @@
         app:layout_constraintStart_toEndOf="@+id/btn_Categoria_Form_Salvar" />
 
     <Button
-        android:id="@+id/btn__Categoria_Form_Voltar"
+        android:id="@+id/btn_Categoria_Form_Voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"

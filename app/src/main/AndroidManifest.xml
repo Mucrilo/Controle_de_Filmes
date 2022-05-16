@@ -14,6 +14,9 @@
         android:theme="@style/Theme.ControleDeFilmes"
         tools:targetApi="31">
         <activity
+            android:name=".Adaptador"
+            android:exported="false" />
+        <activity
             android:name=".CategoriaForm"
             android:exported="false" />
         <activity

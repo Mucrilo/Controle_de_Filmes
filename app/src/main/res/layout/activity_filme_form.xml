@@ -72,35 +72,35 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Tempo em Minutos"
+        android:text="Tempo"
         app:layout_constraintStart_toStartOf="@+id/edt_Filme_Form_Avaliacao"
         app:layout_constraintTop_toBottomOf="@+id/edt_Filme_Form_Avaliacao" />
 
     <Button
-        android:id="@+id/btn__Filme_Form_Salvar"
+        android:id="@+id/btn_Filme_Form_Salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="74dp"
         android:text="Salvar"
         android:onClick="salvarFilme"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn__Filme_Form_Excluir"
-        app:layout_constraintEnd_toEndOf="@+id/btn__Filme_Form_Voltar" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_Filme_Form_Excluir"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Filme_Form_Voltar" />
 
     <Button
-        android:id="@+id/btn__Filme_Form_Excluir"
+        android:id="@+id/btn_Filme_Form_Excluir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="28dp"
         android:text="Excluir"
         android:onClick="excluirFilme"
-        app:layout_constraintBottom_toTopOf="@+id/btn__Filme_Form_Voltar"
-        app:layout_constraintStart_toStartOf="@+id/btn__Filme_Form_Voltar" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_Filme_Form_Voltar"
+        app:layout_constraintStart_toStartOf="@+id/btn_Filme_Form_Voltar" />
 
     <Button
-        android:id="@+id/btn__Filme_Form_Voltar"
+        android:id="@+id/btn_Filme_Form_Voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="58dp"

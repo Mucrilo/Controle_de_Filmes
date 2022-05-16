@@ -9,12 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class FilmeForm extends AppCompatActivity {
     private AppDatabase db;
     private EditText edtTitulo, edtAno, edtAvaliacao, edtTempo;
-    //spinner
+    Spinner spinnerCategorias;
     private Button btnSalvar, btnExcluir;
     private int dbFilmeId;
     private Filme dbFilme;
@@ -29,8 +30,8 @@ public class FilmeForm extends AppCompatActivity {
         edtAvaliacao = findViewById(R.id.edt_Filme_Form_Avaliacao);
         edtTempo = findViewById(R.id.edt_Filme_Form_Tempo);
         //spinner
-        btnSalvar = findViewById(R.id.btn__Filme_Form_Salvar);
-        btnExcluir = findViewById(R.id.btn__Filme_Form_Excluir);
+        btnSalvar = findViewById(R.id.btn_Filme_Form_Salvar);
+        btnExcluir = findViewById(R.id.btn_Filme_Form_Excluir);
         dbFilmeId = getIntent().getIntExtra("filme_id", -1);
     }
 
